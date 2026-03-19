@@ -35,15 +35,15 @@ ACF_LAG1_THRESHOLD          = -0.05  # must be more negative than this
 ACF_LAG2_MAX                = 0.15   # lag-2 must not show strong trend
 
 # Confluence
-MODELS_REQUIRED             = 2      # votes needed out of 4
-CONFIDENCE_MIN              = 0.62   # avg confidence of passing models
+MODELS_REQUIRED             = 3      # votes needed out of 4
+CONFIDENCE_MIN              = 0.75   # avg confidence of passing models
 TOP_CONF_MIN                = 0.70   # at least one model must exceed this
 
 # ── Martingale ───────────────────────────────────────────────────
 # Step table:  $0.35 → $0.66 → $1.25 → $2.36 → reset
 FIRST_STAKE         = 0.35
-MARTINGALE_FACTOR   = 1.89
-MARTINGALE_AFTER    = 2      # consecutive losses before step-up
+MARTINGALE_FACTOR   = 2.5
+MARTINGALE_AFTER    = 1      # consecutive losses before step-up
 MARTINGALE_MAX_STEP = 3      # hard cap — resets to base after
 
 # ── Risk ─────────────────────────────────────────────────────────
