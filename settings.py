@@ -36,7 +36,7 @@ ACF_LAG2_MAX                = 0.15   # lag-2 must not show strong trend
 
 # Confluence
 MODELS_REQUIRED             = 2      # votes needed out of 4
-CONFIDENCE_MIN              = 0.55   # avg confidence of passing models
+CONFIDENCE_MIN              = 0.62   # avg confidence of passing models
 TOP_CONF_MIN                = 0.70   # at least one model must exceed this
 
 # ── Martingale ───────────────────────────────────────────────────
@@ -47,8 +47,8 @@ MARTINGALE_AFTER    = 2      # consecutive losses before step-up
 MARTINGALE_MAX_STEP = 3      # hard cap — resets to base after
 
 # ── Risk ─────────────────────────────────────────────────────────
-TARGET_PROFIT   = 10.0       # daily profit target ($)
-STOP_LOSS       = 20.0       # daily loss limit ($)
+TARGET_PROFIT   = 35.0       # daily profit target ($)
+STOP_LOSS       = 40.0       # daily loss limit ($)
 
 # ── Breathing — market condition change after each trade ─────────
 # Random cooldown forces the bot into genuinely different market
@@ -57,8 +57,8 @@ STOP_LOSS       = 20.0       # daily loss limit ($)
 #
 # Data shows: gaps 6-10 min → 66.7% WR vs gaps 3-6 min → 56.5% WR
 # Raising cooldown to 5-8 min targets the higher-WR bucket.
-COOLDOWN_MIN    = 300        # 5 minutes minimum
-COOLDOWN_MAX    = 480        # 8 minutes maximum
+COOLDOWN_MIN    = 210        # 5 minutes minimum
+COOLDOWN_MAX    = 314        # 8 minutes maximum
 
 # ── Vol stability window ─────────────────────────────────────────
 # Before firing a signal, EWMA vol must have been stable for this
